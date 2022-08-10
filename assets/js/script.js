@@ -19,10 +19,10 @@ toggleSidebar.addEventListener("click", () => {
       openMobileNavbar();
     }
 
-    if (toggleSidebar.children[0].classList.contains('bi-arrow-right-circle-fill')){
-      toggleSidebar.children[0].classList.replace('bi-arrow-right-circle-fill','bi-arrow-left-circle-fill');
+    if (toggleSidebar.children[0].classList.contains('bi-list')){
+      toggleSidebar.children[0].classList.replace('bi-list','bi-x-lg');
     }else{
-      toggleSidebar.children[0].classList.replace('bi-arrow-left-circle-fill','bi-arrow-right-circle-fill');
+      toggleSidebar.children[0].classList.replace('bi-x-lg','bi-list');
     }
   });
 

@@ -5,16 +5,20 @@ header {
   width: 100%;
   position: fixed;
   padding: 1em 2em;
-  color: #000;
   background-color: #fff;
   box-shadow: 0px 10px 13px -10px rgba(0, 0, 0, 0.6352941176), 0px 20px 20px -5px rgba(0, 0, 0, 0);
   z-index: 9;
   top: 0;
 }
 
-header h2 {
+header h2, .header_logo a {
   color: #03118f;
   text-transform: uppercase;
+}
+
+.header_logo a {
+  font-weight: bold;
+  font-size: 1.4rem;
 }
 
 .header_list_group {
@@ -23,7 +27,8 @@ header h2 {
   gap: 1em;
 }
 
-.header_list_group li {
+.header_list_group a li {
+  color: #03118f;
   text-transform: uppercase;
 }
 
@@ -47,21 +52,26 @@ header h2 {
     transition: 0.5s;
     z-index: 10;
   }
-  header h2 {
+  .header_logo a, .header_list_group a li {
     color: #fff;
     text-transform: uppercase;
   }
   .toggle_sidebar {
+    padding: 0.3em;
     display: block;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    right: -25px;
+    position: fixed;
+    top: 0;
+    right: -62px;
+    background-color: #fff;
   }
   .toggle_sidebar i {
     position: relative;
     color: #03118f;
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .header_list_group {
     display: flex;
