@@ -1,0 +1,115 @@
+.our_services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  gap: 1em;
+}
+
+.our_services h2 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 2rem;
+  color: #03118f;
+  margin-bottom: 1em;
+  border-bottom: 1.5px solid #ff6a00;
+  margin: 0 auto;
+}
+
+.fp1_container {
+  color: #000;
+  padding: 2em 4em;
+}
+
+.fp1_content {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.fp1_caption {
+  margin-bottom: 1em;
+}
+
+.fp1_caption h2 {
+  color: #03118f;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.banner {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+  margin: 0 auto;
+}
+
+.banner img {
+  width: max(10vh, 35vw);
+  height: max(10vh, 30vw);
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+}
+
+.banner_caption {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.banner_caption h2 {
+  padding: 0.5em;
+  background-color: #fff;
+  font-size: max(1rem, 2vw);
+}
+
+.fp2_caption {
+  width: 100%;
+  padding: 1em;
+  color: #fff;
+  background-image: linear-gradient(to right, #03118f, #270f51);
+  margin-bottom: 0.5em;
+  border-radius: 10px;
+}
+
+.topic_list_group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.topic_list_group li {
+  flex: 1 1 200px;
+}
+
+.topic_link {
+  cursor: pointer;
+  border-right: 1.5px solid rgba(0, 0, 0, 0.1882352941);
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.1882352941);
+  border-bottom-right-radius: 8px;
+  padding: 1em 0.5em;
+  color: #000;
+  margin-bottom: 0.5em;
+}
+.topic_link:hover {
+  border-right: 1.5px solid #ff6a00;
+  border-bottom: 1.5px solid #ff6a00;
+}
+
+.topic_link h2 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #03118f;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  border-bottom: 1.5px solid #ff6a00;
+}
+
+.topic_link:hover h2 {
+  color: #ff6a00;
+}/*# sourceMappingURL=frontpage.css.map */

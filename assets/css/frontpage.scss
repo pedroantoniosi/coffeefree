@@ -1,0 +1,104 @@
+@import '../css/root';
+@import '../css/mixin';
+
+
+@import './services.scss';
+
+
+.fp1_container {
+    color: $darkColor;
+    padding: 2em 4em;
+}
+
+.fp1_content {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.fp1_caption {
+    margin-bottom: 1em;
+}
+
+
+
+.fp1_caption h2 {
+    color: $primaryColor;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+
+
+.banner {
+    display: block;
+    width: max-content;
+    position: relative;
+    margin: 0 auto;
+}
+
+.banner img {
+    width: max(10vh, 35vw);
+    height: max(10vh, 30vw);
+    object-fit: cover;
+    border-radius: 6px;
+
+}
+
+.banner_caption {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.banner_caption h2 {
+    padding: 0.5em;
+    background-color: $lightColor;
+    font-size: max(1rem, 2vw);
+}
+
+.fp2_caption {
+    width: 100%;
+    padding: 1em;
+    color: $lightColor;
+    background-image: linear-gradient(to right, #03118f, #270f51);
+    margin-bottom: 0.5em;
+    border-radius: 10px;
+}
+
+.topic_list_group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.topic_list_group li {
+    flex: 1 1 200px;
+}
+
+.topic_link {
+    cursor: pointer;
+    border-right: 1.5px solid #00000030;
+    border-bottom: 1.5px solid #00000030;
+    border-bottom-right-radius: 8px;
+    padding: 1em 0.5em;
+    color: $darkColor;
+    margin-bottom: 0.5em;
+
+    &:hover {
+        border-right: 1.5px solid $secondaryColor;
+        border-bottom: 1.5px solid $secondaryColor;
+    }
+}
+
+.topic_link h2 {
+    width: max-content;
+    color: $primaryColor;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    border-bottom: 1.5px solid $secondaryColor;
+}
+
+.topic_link:hover h2 {
+    color: $secondaryColor;
+}

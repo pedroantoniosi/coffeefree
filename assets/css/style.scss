@@ -1,0 +1,144 @@
+@import '../css/root';
+@import '../css/mixin';
+@import './header.scss';
+@import '../css/features.scss';
+@import '../css/demo.scss';
+@import './company.scss';
+@import './frontpage.scss';
+@import './services.scss';
+@import './contact.scss';
+@import './footer.scss';
+
+// HTML RESET //
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    padding-top: 4em;
+    color: $lightColor;
+}
+
+button,
+input,
+textarea {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn {
+    padding: 1em 3em;
+    border-radius: 0.5em;
+    transition: all 0.2s linear;
+}
+
+.btn_more {
+    position: relative;
+    margin: 0 auto;
+    width: 15em;
+    background: $primaryColor;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    box-shadow: #0000005f 0px 3px 6px, #0000005f 0px 3px 6px;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 1;
+    &:hover{
+        background-color: transparent;
+    }
+    &::after {
+        content: ' ';
+        position: absolute;
+        width: 30%;
+        height: 100%;
+        background-color: $secondaryColor;
+        right: 0;
+        bottom: 0;
+        transition: 1s;
+        z-index: -1;
+        clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0% 100%);
+    }
+    &:hover::after {
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+}
+
+.border_title {
+    padding: 0.3em 0em;
+    position: relative;
+    width: max-content;
+    font-size: max(2rem, 3vw);
+    text-transform: uppercase;
+    &::after {
+        content: ' ';
+        position: absolute;
+        width: 4em;
+        border: 2px solid $secondaryColor;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Parameters (Columns,Rows,Column-Gap,Row-Gap) //
+.col_lg {
+    @include gridLayout(2, 1, 1em, 1em);
+}
+
+@media screen and (max-width: $ipad) {}
+
+@media screen and (max-width: $mobile) {
+
+    body {
+        padding: 0em;
+    }
+
+    .col_lg {
+        @include gridLayout(1, 1, 1em, 1em);
+    }
+
+    .banner img {
+        width: 100%;
+        height: max(10vh, 80vw);
+        object-fit: cover;
+    }
+
+    .active {
+        transform: translateX(0em) !important;
+    }
+}

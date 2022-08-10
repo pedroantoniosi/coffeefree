@@ -1,0 +1,141 @@
+    <section>
+        <div class="our_company_container">
+            <div class="our_company_content">
+                <div><img src="./assets/img/company.jpg" alt=""></div>
+                <div class="our_company_caption">
+                    <h2>Our Company</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut diam et nunc rutrum semper
+                        sit amet eget lorem. Donec a odio tristique, pharetra felis eu, vehicula leo. Etiam convallis
+                        nisi in nunc aliquam mollis. Aliquam accumsan dolor luctus leo fringilla, in commodo lorem
+                        euismod. Duis porta velit eu lacus mattis pretium. In nec iaculis sem, ut placerat massa. Proin
+                        blandit nunc imperdiet nulla dictum feugiat. Ut lacinia, sapien non tristique scelerisque, diam
+                        lacus accumsan libero, et pulvinar odio urna vitae felis. In hac habitasse platea dictumst.
+                        Pellentesque commodo eu ex sit amet gravida. Mauris accumsan sollicitudin lorem, non vehicula
+                        dolor aliquet non. In hac habitasse platea dictumst. Aenean vel nisl fringilla nulla consequat
+                        sagittis.</p>
+                    <a href="" class="btn btn_more">See More</a>
+                </div>
+            </div>
+            <div class="company_container">
+                <ul class="company_list_group">
+                    <li class="nav_link active">Vision</li>
+                    <li class="nav_link">Mission</li>
+                </ul>
+                <div class="company_content">
+                    <p class="vision show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, iste ab
+                        tenetur placeat molestias iure praesentium aspernatur nisi. Unde error, aut ipsa temporibus
+                        asperiores voluptates nostrum non debitis explicabo tempore!</p>
+
+                    <p class="mission">Donec in elit ac magna posuere mattis. Ut eleifend ultricies leo viverra porta.
+                        Donec efficitur, ante id posuere maximus, lorem erat convallis purus, in vestibulum erat mauris
+                        a leo. Morbi eu ante tincidunt, ultricies diam et, bibendum elit. Cras ipsum diam, vulputate
+                        ultricies viverra nec, volutpat id mauris. Quisque et gravida leo. Suspendisse eget ornare
+                        lorem. Phasellus maximus porta nisl, sed vehicula tellus condimentum quis. Donec vulputate erat
+                        lacus, id efficitur urna rhoncus finibus. Sed nec odio volutpat, aliquet arcu a, dictum tortor.
+                        Integer imperdiet, dolor eget facilisis commodo, lacus erat sodales libero, sit amet commodo
+                        nibh eros nec ex.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+.our_company_container{
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 12fr 7fr;
+    grid-template-rows: 1fr;
+    gap: 2em;
+}
+
+.our_company_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    color: #000;
+    gap: 2em;
+}
+
+.our_company_content img{
+    width: 100%;
+    max-height: 75vh;
+}
+
+.our_company_content h2{
+    font-size: 3rem;
+   font-weight: 300;
+   margin-bottom: 0.5em;
+}
+
+.our_company_content p{
+    margin-bottom: 2em;
+}
+
+.company_container{
+    border: 1px solid #595959;
+    color: #000;
+}
+
+.company_list_group{
+    display: flex;
+    list-style: none;
+    border-bottom: 1px solid #595959;
+}
+
+.nav_link{
+    cursor: pointer;
+    padding: 1em;
+    width: 100%;
+}
+
+.nav_link:nth-of-type(2){
+    border-left: 1px solid #595959;
+}
+
+.company_list_group .active{
+   background-color: #d1d1d1;
+}
+
+.company_content{
+    padding: 2em;
+}
+
+
+@media screen and (max-width: $mobile) {
+    .our_company_container{
+        padding: 0em;
+    }
+
+    .our_company_caption{
+        padding: 2em;
+    }
+
+    .our_company_content{
+        gap: 0em;
+    }
+
+    .our_company_content img{
+        max-height: 50vh;
+    }
+
+    .our_company_container,.our_company_content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .our_company_content h2{
+        font-size: 2rem;
+       font-weight: 300;
+       margin-bottom: 0.5em;
+    }
+}

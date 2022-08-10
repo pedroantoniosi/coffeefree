@@ -1,0 +1,30 @@
+@import '../css/root';
+@import '../css/mixin';
+
+.demo_container {
+    display: grid;
+    place-items: center;
+    padding: 2em 4em;
+    background: rgb(255,255,255);
+    background: linear-gradient(110deg, rgba(255,255,255,1) 41%, rgba(184,184,184,1) 78%);
+}
+
+.demo_content{
+    @include flexBox(column, nowrap);
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    color: $primaryColor;
+    text-align: center;
+    height: 100vh;
+}
+
+.demo_content span i {
+    font-size: 5rem;
+}
+
+@media screen and (max-width: $mobile) {
+    .demo_content{
+        height: auto;
+    }
+}

@@ -1,0 +1,12 @@
+@mixin gridLayout($col_number, $row_number,$col_gap,$row_gap) {
+    display: grid;
+    grid-template-columns: repeat($col_number, 1fr);
+    grid-template-rows: repeat($row_number, 1fr);
+    grid-column-gap: $col_gap;
+    grid-row-gap: $row_gap;
+}
+
+@mixin flexBox($flex_direction, $flex-wrap) {
+    display: flex;
+    flex-flow: $flex_direction $flex-wrap;
+}
