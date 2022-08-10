@@ -22,6 +22,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .demo_container {
+    padding: 2em;
+  }
   .demo_content {
     height: auto;
   }

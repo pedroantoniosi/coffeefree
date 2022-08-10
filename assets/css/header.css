@@ -12,6 +12,11 @@ header {
   top: 0;
 }
 
+header h2 {
+  color: #03118f;
+  text-transform: uppercase;
+}
+
 .header_list_group {
   display: flex;
   flex-flow: row wrap;
@@ -43,6 +48,7 @@ header {
     z-index: 10;
   }
   header h2 {
+    color: #fff;
     text-transform: uppercase;
   }
   .toggle_sidebar {

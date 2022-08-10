@@ -11,8 +11,9 @@
 .contact_content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  gap: 2em;
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
 }
 
 .contact_content form {
@@ -25,7 +26,8 @@
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-.contact_content form input, .contact_content textarea {
+.contact_content form input,
+.contact_content textarea {
   width: 100%;
   padding: 1em 0.5em;
   background-color: #dedede;
@@ -37,7 +39,8 @@
   height: 20vh;
 }
 
-.contact_content form input:focus-within, .contact_content textarea:focus-within {
+.contact_content form input:focus-within,
+.contact_content textarea:focus-within {
   border: 1.5px solid #03118f;
 }
 
@@ -51,4 +54,17 @@
 .contact_content iframe {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .contact_content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+  }
+  .contact_container {
+    padding: 2em;
+  }
 }/*# sourceMappingURL=contact.css.map */

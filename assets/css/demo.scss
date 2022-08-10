@@ -24,6 +24,10 @@
 }
 
 @media screen and (max-width: $mobile) {
+    .demo_container {
+        padding: 2em;
+    }
+
     .demo_content{
         height: auto;
     }

@@ -22,6 +22,7 @@ li {
 }
 
 a {
+    color: $lightColor;
     text-decoration: none;
 }
 
@@ -55,7 +56,6 @@ textarea {
     border-radius: 10px;
     display: block;
     box-shadow: #0000005f 0px 3px 6px, #0000005f 0px 3px 6px;
-    transition: 0.5s;
     overflow: hidden;
     z-index: 1;
     &:hover{
@@ -120,12 +120,23 @@ textarea {
     @include gridLayout(2, 1, 1em, 1em);
 }
 
-@media screen and (max-width: $ipad) {}
+@media screen and (max-width: $ipad) {
+    .btn_more {
+        &::after {
+            transition: 0.5s;
+        }
+    }
+}
 
 @media screen and (max-width: $mobile) {
-
     body {
         padding: 0em;
+    }
+
+    .btn_more {
+        &::after {
+            transition: 0.3s;
+        }
     }
 
     .col_lg {

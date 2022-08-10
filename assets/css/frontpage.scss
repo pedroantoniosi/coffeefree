@@ -102,3 +102,18 @@
 .topic_link:hover h2 {
     color: $secondaryColor;
 }
+
+
+@media screen and (max-width: $ipad) {
+    .fp1_content {
+        justify-content: space-evenly;
+        height: 100vh;
+    }
+}
+
+
+@media screen and (max-width: $mobile) {
+    .fp1_container {
+        padding: 2em;
+    }
+}

@@ -47,4 +47,28 @@
 
 .footer_link {
   font-size: 1.1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer_container {
+    padding: 0em;
+  }
+  .footer_item {
+    padding: 2em;
+    border-bottom: 1.5px solid gray;
+  }
+  .footer_item .border_title {
+    padding: 0.5em;
+    margin-bottom: 1.5em;
+  }
+  .footer_item:nth-of-type(2) input {
+    margin-bottom: 1em;
+  }
+  .footer_content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 4em;
+    grid-row-gap: 2em;
+  }
 }/*# sourceMappingURL=footer.css.map */

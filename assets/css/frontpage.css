@@ -112,4 +112,16 @@
 
 .topic_link:hover h2 {
   color: #ff6a00;
+}
+
+@media screen and (max-width: 992px) {
+  .fp1_content {
+    justify-content: space-evenly;
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fp1_container {
+    padding: 2em;
+  }
 }/*# sourceMappingURL=frontpage.css.map */

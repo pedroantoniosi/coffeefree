@@ -1,7 +1,6 @@
 @import './mixin';
 @import './root';
 
-
 header {
     @include flexBox(row, wrap);
     justify-content: space-between;
@@ -16,6 +15,11 @@ header {
     top: 0;
 }
 
+header h2 {
+    color: $primaryColor;
+    text-transform: uppercase;
+}
+
 .header_list_group {
     @include flexBox(row, wrap);
     gap: 1em;
@@ -25,12 +29,11 @@ header {
     text-transform: uppercase
 }
 
-.toggle_sidebar{
+.toggle_sidebar {
     display: none;
 }
 
 @media screen and (max-width: $mobile) {
-
     header {
         background-color: #242c36;
         position: relative;
@@ -46,7 +49,8 @@ header {
         z-index: 10;
     }
 
-    header h2{
+    header h2 {
+        color: $lightColor;
         text-transform: uppercase;
     }
 
@@ -63,8 +67,6 @@ header {
         color: $primaryColor;
         font-size: 4rem;
     }
-
-   
 
     .header_list_group {
         @include flexBox(column, nowrap);
